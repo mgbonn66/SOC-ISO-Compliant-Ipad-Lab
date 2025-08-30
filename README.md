@@ -34,3 +34,8 @@ This project demonstrates **endpoint security, governance, and compliance** usin
 /Docs/ # Compliance mapping, diagrams, workflow charts
 README.md # Project overview
 LICENSE.md # Optional open-source license
+
+### Showcase
+- Screenshots of profiles applied
+- Jamf and Intune dashboard compliance views
+- Video walkthroughs (optional)
