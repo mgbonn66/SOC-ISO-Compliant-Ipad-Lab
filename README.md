@@ -28,6 +28,7 @@ This project demonstrates **endpoint security, governance, and compliance** usin
 | App Control | Whitelist approved apps, restrict App Store |
 | Compliance Monitoring | Jamf inventory, compliance reporting, remote wipe |
 
+```
 ### Repository Structure
 
 SOC2-ISO-iPad-Lab/
@@ -40,7 +41,7 @@ SOC2-ISO-iPad-Lab/
 │   └── Screenshots/
 ├── Docs/                   # Optional: diagrams, compliance mapping tables, workflow charts
 └── LICENSE.md              # Optional open-source license
-
+```
 
 ### Showcase
 - Screenshots of profiles applied
