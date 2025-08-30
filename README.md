@@ -29,16 +29,18 @@ This project demonstrates **endpoint security, governance, and compliance** usin
 | Compliance Monitoring | Jamf inventory, compliance reporting, remote wipe |
 
 ### Repository Structure
-SOC2-ISO-iPad-Lab/           # Repository root
- ├── README.md               # Project overview, SOC2/ISO mapping summary
- ├── Jamf/                   # Jamf configuration profiles (.mobileconfig), scripts, screenshots
- │    ├── Profiles/
- │    └── Screenshots/
- ├── Intune/                 # Intune policies, screenshots, exported JSON/XML
- │    ├── Policies/
- │    └── Screenshots/
- ├── Docs/                   # Optional: diagrams, compliance mapping tables, workflow charts
- └── LICENSE.md              # Optional open-source license if you want to share publicly
+
+SOC2-ISO-iPad-Lab/
+├── README.md               # Project overview, SOC2/ISO mapping summary
+├── Jamf/                   # Jamf configuration profiles, scripts, screenshots
+│   ├── Profiles/
+│   └── Screenshots/
+├── Intune/                 # Intune policies, screenshots, exported JSON/XML
+│   ├── Policies/
+│   └── Screenshots/
+├── Docs/                   # Optional: diagrams, compliance mapping tables, workflow charts
+└── LICENSE.md              # Optional open-source license
+
 
 ### Showcase
 - Screenshots of profiles applied
