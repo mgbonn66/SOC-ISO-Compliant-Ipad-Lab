@@ -1,0 +1,41 @@
+# iPad Security & Compliance Summary
+
+This document summarizes the **endpoint security and compliance policies** applied to a supervised iPad via Jamf (and optionally Intune). Each configuration is mapped to **SOC2 Trust Services Criteria (TSC)** and **ISO 27001:2022 Annex A** controls. Screenshots are included to demonstrate enforcement.
+
+---
+
+## Repository PDFs (References)
+
+- [SOC2 2018 Description Criteria (Revised Guidance 2022)](./2018%20SOC%202%C2%AE%20Description%20Criteria%20(With%20Revised%20Implementation%20Guidance%20–%202022).pdf)  
+- [ISO 27001:2022 Annex A Control Mapping](./ISO-27001-2022-Annex-A-Control-Mapping.pdf)  
+- [ISO 27001: Controls List](./ISO-27001-Controls-List-Free-Download-pdf-.pdf)  
+
+---
+
+## iPad Security Configuration Mapping
+
+| iPad Policy / Configuration | SOC2 Control (TSC) | ISO 27001:2022 Control | Notes / Justification | Screenshot |
+|-----------------------------|-------------------|-----------------------|---------------------|------------|
+| Require passcode (6+ digits / alphanumeric) | CC6.1 – Logical Access Control | A.9.1 – Access Control Policy | Ensures only authorized users can unlock device | ![Passcode Screenshot](../Jamf/Screenshots/passcode.png) |
+| Auto-lock ≤ 5 min | CC6.1 | A.9.4 – Access Control for Mobile Devices | Reduces risk of unauthorized access | ![Auto-Lock Screenshot](../Jamf/Screenshots/auto-lock.png) |
+| Maximum failed passcode attempts → wipe | CC6.1 | A.9.2 – User Authentication | Protects data if device is lost or stolen | ![Failed Attempts Screenshot](../Jamf/Screenshots/failed-attempts.png) |
+| Enable Face ID / Touch ID | CC6.1 | A.9.2 – User Authentication | Biometric authentication enhances access control | ![FaceID Screenshot](../Jamf/Screenshots/faceid.png) |
+| Disable Siri, AirDrop, Camera | CC6.4 – System Hardening | A.12.6 – Technical Vulnerability Management | Reduces attack surface and sensitive data leakage | ![Restrictions Screenshot](../Jamf/Screenshots/restrictions.png) |
+| Disable iCloud Backup / Force encrypted backup | CC6.4 | A.10.1 – Cryptography / Secure Storage | Prevents unencrypted cloud storage of sensitive data | ![iCloud Backup Screenshot](../Jamf/Screenshots/icloud-backup.png) |
+| Restrict App Store / App Whitelisting | CC6.5 | A.12.5 – Secure Configuration | Ensures only approved apps are installed | ![App Restrictions Screenshot](../Jamf/Screenshots/app-restrictions.png) |
+| Configure Wi-Fi SSID / Enforce VPN | CC6.3 / CC6.4 | A.13.1 – Network Security | Protects communications and prevents MITM attacks | ![Wi-Fi / VPN Screenshot](../Jamf/Screenshots/wifi-vpn.png) |
+| Force automatic iOS updates | CC6.4 | A.12.6 – Vulnerability Management | Ensures devices are patched against security vulnerabilities | ![OS Updates Screenshot](../Jamf/Screenshots/updates.png) |
+| Inventory collection & compliance reporting | CC7.4 – Monitoring & Logging | A.12.7 – Security Monitoring | Tracks devices for compliance and incidents | ![Inventory Screenshot](../Jamf/Screenshots/inventory.png) |
+| Remote wipe & lock | CC6.1 / CC7.4 | A.12.6 / A.12.7 | Ensures lost/stolen devices don’t compromise sensitive data | ![Remote Wipe Screenshot](../Jamf/Screenshots/remote-wipe.png) |
+
+---
+
+## Notes / Next Steps
+
+- Replace placeholder screenshots with actual images from Jamf / Intune dashboards.  
+- Add optional video walkthroughs for each configuration.  
+- Optionally expand the table with **Intune policies** in a separate section if you replicate the lab there.  
+
+---
+
+*This document makes the project fully portfolio-ready, showing practical alignment between real device configurations and recognized compliance frameworks (SOC2 & ISO 27001).*
